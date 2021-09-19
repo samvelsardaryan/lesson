@@ -1,7 +1,9 @@
+const exp = require("constants");
 var express = require("express");
 var os = require("os");
 var message = "The platform is ";
 var app = express();
+
 app.use(express.static('lesson3'));
 
 app.get("/", function(req, res){
